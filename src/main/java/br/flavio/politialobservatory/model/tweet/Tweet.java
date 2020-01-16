@@ -1,10 +1,11 @@
-package br.flavio.politialobservatory.model;
+package br.flavio.politialobservatory.model.tweet;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 import org.springframework.data.annotation.Id;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -18,6 +19,7 @@ import org.springframework.data.annotation.Id;
 })
 @Getter
 @Setter
+@Accessors(chain = true)
 public class Tweet {
     @Id
     @JsonProperty("id_str")
