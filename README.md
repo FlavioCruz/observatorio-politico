@@ -1,6 +1,6 @@
 # observatorio-politico
 Undergraduate thesis project
-#API
+# API
 
-#Pages
+# Pages
 
